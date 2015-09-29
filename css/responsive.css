@@ -1,0 +1,70 @@
+
+.moving-bg{
+    background-image: url("../images/a.jpg");
+    background-repeat: repeat-x;
+    background-size:cover;
+     height:100%;
+    width:100%;
+     -webkit-animation:moveit 5s linear infinite;
+    animation:moveit 30s linear infinite;
+    background-size: 200% 100%;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveit {
+    from { background-position: 0% 0px;}
+    to { background-position: 200% 0px;}
+}
+
+/* Standard syntax */
+@keyframes moveit {
+     from { background-position: 0% 0px;}
+    to { background-position: 200% 0px;}
+}
+#upbtn:hover ~ div{
+/*
+     -webkit-animation: up 5s;  Chrome, Safari, Opera  
+    animation: up 5s;
+*/
+}
+#downbtn:hover ~ .div{
+     -webkit-animation: down 5s; /* Chrome, Safari, Opera */ 
+    animation: down 5s;
+}
+
+@-webkit-keyframes down {
+from {top: 0px;}
+    to {top: 400px;}
+}
+
+/* Standard syntax */
+@keyframes down {
+     from {top: 0px;}
+    to {top: 400;}
+}
+@-webkit-keyframes up {
+from {bottom: 400px;}
+    to {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes up {
+    from {bottom: 400px;}
+    to {top: 0px;}
+}
+.imgt{
+    position: relative;
+    
+}
+.imgt:hover{
+    animation:down 5s; 
+  }
+
+.container{
+border-style: dashed;
+    border-width: 1px;
+   
+    text-align:center;
+    width: 100%;
+    height: 100%;
+}
