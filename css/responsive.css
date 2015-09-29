@@ -22,10 +22,8 @@
     to { background-position: 200% 0px;}
 }
 #upbtn:hover ~ div{
-/*
-     -webkit-animation: up 5s;  Chrome, Safari, Opera  
+     -webkit-animation: up 5s;  
     animation: up 5s;
-*/
 }
 #downbtn:hover ~ .div{
      -webkit-animation: down 5s; /* Chrome, Safari, Opera */ 
@@ -34,13 +32,13 @@
 
 @-webkit-keyframes down {
 from {top: 0px;}
-    to {top: 400px;}
+    to {bottom: 400px;}
 }
 
 /* Standard syntax */
 @keyframes down {
      from {top: 0px;}
-    to {top: 400;}
+    to {bottom: 400px;}
 }
 @-webkit-keyframes up {
 from {bottom: 400px;}
